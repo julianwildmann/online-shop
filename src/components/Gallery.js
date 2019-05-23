@@ -48,9 +48,7 @@ class Gallery extends React.Component {
           playButtonEnabled={false}
           autoPlay={false}
           showSlideIndex={true}
-          preventEventOnTouchMove={true}
-          slideNext={true}
-          slidePrev={true}
+          preventEventOnTouchMove={false}
           buttonsDisabled={true}
 
         />
