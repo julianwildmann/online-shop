@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/online-shop/static/css/main.8ef63b32.chunk.css",
+    "main.js": "/online-shop/static/js/main.6ca576b2.chunk.js",
+    "main.js.map": "/online-shop/static/js/main.6ca576b2.chunk.js.map",
+    "runtime~main.js": "/online-shop/static/js/runtime~main.b83c20ff.js",
+    "runtime~main.js.map": "/online-shop/static/js/runtime~main.b83c20ff.js.map",
+    "static/css/2.a881067f.chunk.css": "/online-shop/static/css/2.a881067f.chunk.css",
+    "static/js/2.55ce5793.chunk.js": "/online-shop/static/js/2.55ce5793.chunk.js",
+    "static/js/2.55ce5793.chunk.js.map": "/online-shop/static/js/2.55ce5793.chunk.js.map",
+    "index.html": "/online-shop/index.html",
+    "precache-manifest.7030c78f755cd2d6211399df0ff2e9fc.js": "/online-shop/precache-manifest.7030c78f755cd2d6211399df0ff2e9fc.js",
+    "service-worker.js": "/online-shop/service-worker.js",
+    "static/css/2.a881067f.chunk.css.map": "/online-shop/static/css/2.a881067f.chunk.css.map",
+    "static/css/main.8ef63b32.chunk.css.map": "/online-shop/static/css/main.8ef63b32.chunk.css.map",
+    "static/media/product-image-1.png": "/online-shop/static/media/product-image-1.ec7af2a2.png",
+    "static/media/product-image-2.png": "/online-shop/static/media/product-image-2.e52ce555.png",
+    "static/media/product-image-3.png": "/online-shop/static/media/product-image-3.d774c01c.png",
+    "static/media/product-image-4.png": "/online-shop/static/media/product-image-4.54605eea.png",
+    "static/media/product-image-5.png": "/online-shop/static/media/product-image-5.8f614533.png"
+  }
+}
