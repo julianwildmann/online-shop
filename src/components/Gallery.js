@@ -4,17 +4,17 @@ import "react-alice-carousel/lib/alice-carousel.css"
  
 class Gallery extends React.Component {
   items = [
-      require("./product-image-1.png"),
-      require("./product-image-2.png"),
-      require("./product-image-3.png"),
-      require("./product-image-4.png"),
-      require("./product-image-5.png"),
+      require("./product_images/product-image-1.jpg"),
+      require("./product_images/product-image-2.jpg"),
+      require("./product_images/product-image-3.jpg"),
+      require("./product_images/product-image-4.jpg"),
+      require("./product_images/product-image-5.jpg"),
 ];
 
  
   state = {
     currentIndex: 0,
-    responsive: { 1024: { items: 1 } },
+    responsive: { 750: { items: 1 }, 1024: {items: 3}},
     galleryItems: this.galleryItems(),
   }
  
