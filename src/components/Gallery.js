@@ -36,7 +36,7 @@ class Gallery extends React.Component {
     const { galleryItems, responsive, currentIndex } = this.state
     return (
       <div>
-        <AliceCarousel
+        <AliceCarousel align-content="center"
           dotsDisabled={false}
           buttonsDisabled={true}
           items={galleryItems}
@@ -48,6 +48,7 @@ class Gallery extends React.Component {
           playButtonEnabled={false}
           autoPlay={false}
           showSlideIndex={true}
+          preventEventOnTouchMove={true}
 
         />
  
