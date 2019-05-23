@@ -49,15 +49,21 @@ class Gallery extends React.Component {
           autoPlay={false}
           showSlideIndex={true}
           preventEventOnTouchMove={true}
+          slideNext={true}
+          slidePrev={true}
+          buttonsDisabled={true}
 
         />
  
         <ul>{this.items.map(this.thumbItem)}</ul>
-        <button onClick={() => this.slidePrev()}>Vorheriges Bild</button>
-        <button onClick={() => this.slideNext()}>Nächstes Bild</button>
       </div>
     )
   }
 }
 
 export default Gallery;
+
+/* Button controls
+<button onClick={() => this.slidePrev()}>Vorheriges Bild</button>
+<button onClick={() => this.slideNext()}>Nächstes Bild</button>
+*/

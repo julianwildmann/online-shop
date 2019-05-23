@@ -4,7 +4,7 @@ class Title extends React.Component {
     render () {
         return (
     <div> 
-    <h1>Eames Plastic Side Chair DSW</h1>
+    <h1 align="left">Eames Plastic Side Chair DSW</h1>
     </div>
         )
     }

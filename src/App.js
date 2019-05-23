@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Title from "./components/Title";
 import Gallery from "./components/Gallery";
+import GalleryNoThumb from "./components/GalleryNoThumb";
 import Description from "./components/Description";
+
 
 
 
@@ -32,7 +34,6 @@ class App extends Component {
       <div className="App">
         <Title />
         <Gallery />
-        <Description />
       </div>
     );
   }
