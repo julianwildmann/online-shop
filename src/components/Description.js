@@ -8,13 +8,24 @@ class Description extends React.Component {
                 <p>Beim Dining Height Side Chair Wood Base (DSW) kombinierten Charles und Ray Eames die organische Sitzschale mit einem Vierbein-Holzuntergestell. Die Kombination von Kunststoff und Holz verleiht dem Klassiker eine gewisse Wärme, eine besonders wohnliche Note. Die Sitzschalen können mit Sitzpolstern oder einer kompletten Polsterung ausgestattet werden, deren Auswahl an Stofffarben eine Vielzahl von individuellen Konfigurationen ermöglicht.</p>
                 <h3>Maße</h3>
                 <p>
-                    <ul>
-                        <li>Höhe: 830 mm</li>
-                        <li>Breite: 465 mm</li>
-                        <li>Tiefe: 550 mm</li>
-                        <li>Sitzhöhe: 430 mm</li>
-                        <li>Sitztiefe: 465</li>
-                    </ul>
+                    <table align="center">
+                        <tr>
+                            <th> </th>
+                            <th>Breite</th>
+                            <th>Höhe</th>
+                            <th>Tiefe</th>
+                            <th>Sitzhöhe</th>
+                            <th>Sitztiefe</th>
+                        </tr>
+                        <tr>
+                            <td>in mm</td>
+                            <td>465</td>
+                            <td>830</td>
+                            <td>550</td>
+                            <td>430</td>
+                            <td>465</td>
+                        </tr>
+                    </table>
                 </p>
             </div>
         )

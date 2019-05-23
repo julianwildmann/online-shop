@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
 }
 
 .App-logo {
@@ -17,11 +18,31 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f4f4f4;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+#responsive-gallery-image {
+  width: 70%;  height: auto;
+  padding: 25px;
+}
+
+#responsive-thumbnail-image {
+  width: 15%;  height: auto;
+  padding: 10px;
+}
+
+#responsive-ar-image {
+  width: 50%;  height: auto;
+}
+
+table, th, td {
+  border: 1px solid #282c34;
+  border-collapse: collapse;
+  padding: 15px;
 }
 
 @keyframes App-logo-spin {

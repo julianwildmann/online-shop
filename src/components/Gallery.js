@@ -26,10 +26,10 @@ class Gallery extends React.Component {
  
   slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 })
  
-  thumbItem = (item, i) => <span onClick={() => this.slideTo(i)}><img src={item} alt="productimage+i" width="100px"></img></span>
+  thumbItem = (item, i) => <span onClick={() => this.slideTo(i)}><img src={item} alt="productimage+i" id="responsive-thumbnail-image"></img></span>
  
   galleryItems() {
-    return this.items.map((i) => <img key={i} src={i} alt="productimage+i" width="300px"></img>)
+    return this.items.map((i) => <img key={i} src={i} alt="productimage+i" id="responsive-gallery-image"></img>)
   }
  
   render() {
@@ -52,8 +52,8 @@ class Gallery extends React.Component {
         />
  
         <ul>{this.items.map(this.thumbItem)}</ul>
-        <button onClick={() => this.slidePrev()}>Prev button</button>
-        <button onClick={() => this.slideNext()}>Next button</button>
+        <button onClick={() => this.slidePrev()}>Vorheriges Bild</button>
+        <button onClick={() => this.slideNext()}>Nächstes Bild</button>
       </div>
     )
   }
