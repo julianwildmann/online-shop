@@ -31,8 +31,6 @@
 
 #responsive-gallerynothumb-image {
   width: 40%;  height: auto;
-  padding-left: 0px;
-  padding-right: 0px;
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 0px;
@@ -60,6 +58,19 @@ table, th, td {
   padding: 5px;
 }
 
+#heading {
+  color: black;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#subheading {
+  color: #888888;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 0px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
