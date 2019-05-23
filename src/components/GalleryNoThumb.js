@@ -16,7 +16,7 @@ class GalleryNoThumb extends React.Component {
  
   state = {
     currentIndex: 0,
-    responsive: { 750: { items: 2 }},
+    responsive: { 600: { items: 3 }},
     galleryItems: this.galleryItems(),
   }
  
