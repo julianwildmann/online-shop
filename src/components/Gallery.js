@@ -35,7 +35,7 @@ class Gallery extends React.Component {
   render() {
     const { galleryItems, responsive, currentIndex } = this.state
     return (
-      <div>
+      <div style={galleryStyle}>
         <AliceCarousel
           dotsDisabled={false}
           buttonsDisabled={true}
@@ -49,13 +49,26 @@ class Gallery extends React.Component {
           autoPlay={false}
           showSlideIndex={true}
           preventEventOnTouchMove={false}
+        />  
 
-        />
- 
-        <ul>{this.items.map(this.thumbItem)}</ul>
+        <div>
+          <ul style={thumbnailStyle}>{this.items.map(this.thumbItem)}</ul>
       </div>
+
+      </div>
+      
     )
   }
+}
+
+const galleryStyle ={
+  marginTop: "0px",
+  marginBottom: "15px",
+}
+
+const thumbnailStyle ={
+  marginTop: "10px",
+  marginBottom: "10px",
 }
 
 export default Gallery;

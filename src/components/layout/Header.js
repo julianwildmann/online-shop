@@ -12,7 +12,8 @@ function Header () {
 const headerStyle ={
     background: "#333",
     textAlign: "left",
-    padding: "5px 5px",
+    padding: "1px 10px",
+    margin: "0px 0px",
 }
 
 export default Header;
