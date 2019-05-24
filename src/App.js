@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Title from "./components/Title";
+import Header from "./components/layout/Header";
 import Gallery from "./components/Gallery";
-import GalleryNoThumb from "./components/GalleryNoThumb";
-import Description from "./components/Description";
-
-
 
 
 class App extends Component {
@@ -29,12 +25,12 @@ class App extends Component {
     ]
   }
   render() {
-    console.log(this.state.todos)
     return (
       <div className="App">
-        <Title />
-        <Gallery />
-        <GalleryNoThumb />
+        <div className="Container">
+              <Header />
+              <Gallery />
+        </div>
       </div>
     );
   }

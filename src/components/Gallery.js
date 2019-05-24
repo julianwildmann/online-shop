@@ -14,7 +14,7 @@ class Gallery extends React.Component {
  
   state = {
     currentIndex: 0,
-    responsive: { 750: { items: 1 }, 1024: {items: 3}},
+    responsive: { 600: { items: 1 }, 1024: {items: 3}},
     galleryItems: this.galleryItems(),
   }
  
@@ -49,7 +49,6 @@ class Gallery extends React.Component {
           autoPlay={false}
           showSlideIndex={true}
           preventEventOnTouchMove={false}
-          buttonsDisabled={true}
 
         />
  
