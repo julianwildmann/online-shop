@@ -4,11 +4,11 @@ import "react-alice-carousel/lib/alice-carousel.css"
  
 class Gallery extends React.Component {
   items = [
-      require("./product_images/product-image-1.jpg"),
-      require("./product_images/product-image-2.jpg"),
-      require("./product_images/product-image-3.jpg"),
-      require("./product_images/product-image-4.jpg"),
-      require("./product_images/product-image-5.jpg"),
+      require("./img/product-image-1.jpg"),
+      require("./img/product-image-2.jpg"),
+      require("./img/product-image-3.jpg"),
+      require("./img/product-image-4.jpg"),
+      require("./img/product-image-5.jpg"),
 ];
 
  
