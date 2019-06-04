@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/online-shop/static/css/main.27acd5e3.chunk.css",
-    "main.js": "/online-shop/static/js/main.cb023b8a.chunk.js",
-    "main.js.map": "/online-shop/static/js/main.cb023b8a.chunk.js.map",
+    "main.js": "/online-shop/static/js/main.6fb42acb.chunk.js",
+    "main.js.map": "/online-shop/static/js/main.6fb42acb.chunk.js.map",
     "runtime~main.js": "/online-shop/static/js/runtime~main.b83c20ff.js",
     "runtime~main.js.map": "/online-shop/static/js/runtime~main.b83c20ff.js.map",
     "static/css/2.a881067f.chunk.css": "/online-shop/static/css/2.a881067f.chunk.css",
     "static/js/2.fbcfb491.chunk.js": "/online-shop/static/js/2.fbcfb491.chunk.js",
     "static/js/2.fbcfb491.chunk.js.map": "/online-shop/static/js/2.fbcfb491.chunk.js.map",
     "index.html": "/online-shop/index.html",
-    "precache-manifest.943362a4725773c741f45cbbf6ea7f20.js": "/online-shop/precache-manifest.943362a4725773c741f45cbbf6ea7f20.js",
+    "precache-manifest.d03f1742a8ade79530b2b0a98b22a80c.js": "/online-shop/precache-manifest.d03f1742a8ade79530b2b0a98b22a80c.js",
     "service-worker.js": "/online-shop/service-worker.js",
     "static/css/2.a881067f.chunk.css.map": "/online-shop/static/css/2.a881067f.chunk.css.map",
     "static/css/main.27acd5e3.chunk.css.map": "/online-shop/static/css/main.27acd5e3.chunk.css.map",
-    "static/media/product-image-1.jpg": "/online-shop/static/media/product-image-1.34366440.jpg",
-    "static/media/product-image-2.jpg": "/online-shop/static/media/product-image-2.a1c47fdf.jpg",
-    "static/media/product-image-3.jpg": "/online-shop/static/media/product-image-3.ab416b5c.jpg",
-    "static/media/product-image-4.jpg": "/online-shop/static/media/product-image-4.57aad098.jpg",
-    "static/media/product-image-5.jpg": "/online-shop/static/media/product-image-5.6a833da0.jpg"
+    "static/media/product-image-11.jpg": "/online-shop/static/media/product-image-11.5e487c23.jpg",
+    "static/media/product-image-21.jpg": "/online-shop/static/media/product-image-21.677834bd.jpg",
+    "static/media/product-image-31.jpg": "/online-shop/static/media/product-image-31.aa3514d0.jpg",
+    "static/media/product-image-41.jpg": "/online-shop/static/media/product-image-41.80206bd6.jpg",
+    "static/media/product-image-51.jpg": "/online-shop/static/media/product-image-51.8995358e.jpg"
   }
 }
