@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel'
 import "react-alice-carousel/lib/alice-carousel.css"
  
 class Gallery extends React.Component {
+  // Definiere Array in welchem die Produktbilder gespeichert werden
   items = [
       require("./img/product-image-11.jpg"),
       require("./img/product-image-21.jpg"),
@@ -11,7 +12,7 @@ class Gallery extends React.Component {
       require("./img/product-image-51.jpg"),
 ];
 
- 
+  // Starte Index bei 0, Zeige ein bzw drei Hero Bilder je nach Bildschirmgröße
   state = {
     currentIndex: 0,
     responsive: { 600: { items: 1 }, 1024: {items: 3}},
@@ -28,6 +29,7 @@ class Gallery extends React.Component {
  
   thumbItem = (item, i) => <span onClick={() => this.slideTo(i)}><img src={item} alt="productimage+i" id="responsive-thumbnail-image"></img></span>
  
+  // Mappe die image Elemente in der Gallery mit den Objekten im Array
   galleryItems() {
     return this.items.map((i) => <img key={i} src={i} alt="productimage+i" id="responsive-gallery-image"></img>)
   }
@@ -35,6 +37,7 @@ class Gallery extends React.Component {
   render() {
     const { galleryItems, responsive, currentIndex } = this.state
     return (
+      // Definiere die Features der Gallery und erstelle eine Liste mit Thumbnail-Bildern
       <div style={galleryStyle}>
         <AliceCarousel
           dotsDisabled={false}
@@ -49,7 +52,7 @@ class Gallery extends React.Component {
           autoPlay={false}
           showSlideIndex={true}
           preventEventOnTouchMove={false}
-        />  
+        /> 
 
         <div>
           <ul style={thumbnailStyle}>{this.items.map(this.thumbItem)}</ul>
@@ -61,6 +64,7 @@ class Gallery extends React.Component {
   }
 }
 
+// Styleelement für Gallery und Thumbnails
 const galleryStyle ={
   marginTop: "0px",
   marginBottom: "15px",

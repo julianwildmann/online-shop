@@ -69,6 +69,7 @@ table, th, td {
   margin-top: 0px;
   padding-top: 0px;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
