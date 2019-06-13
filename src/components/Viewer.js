@@ -1,67 +1,76 @@
-import React, { Component } from "react";
-import * as THREE from "three";
-const OrbitControls = require("three-orbit-controls")(THREE);
+import React, { Component } from 'react';
+import * as THREE from 'three';
+import GLTFLoader from 'three-gltf-loader';
+import Model from "./model.gltf"; 
 
-class Viewer extends Component {
-  constructor(props) {
-    super(props);
-    this.animate = this.animate.bind(this);
-    this.addCube = this.addCube.bind(this);
-    this.initializeCamera = this.initializeCamera.bind(this);
-    this.initializeOrbits = this.initializeOrbits.bind(this);
-  }
-componentDidMount() {
-    const width = this.mount.clientWidth;
-    const height = this.mount.clientHeight;
-    this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    this.renderer = new THREE.WebGLRenderer({ antialias: true });
+const OrbitControls = require("three-orbit-controls") (THREE);
+
+class Viewer extends Component{
+
+
+  componentDidMount(){
+    const width = this.mount.clientWidth
+    const height = this.mount.clientHeight
+
+    //ADD SCENE
+    this.scene = new THREE.Scene()
+
+    //ADD CAMERA
+    this.camera = new THREE.PerspectiveCamera(
+      75,
+      width / height,
+      0.1,
+      1000
+    )
+    this.camera.position.z = 4
+
+    //ADD RENDERER
+    this.renderer = new THREE.WebGLRenderer({ antialias: true })
+    this.renderer.setClearColor('#888888')
+    this.renderer.setSize(width, height)
+    this.mount.appendChild(this.renderer.domElement)
+
+    //ADD ORBIT CONTROL
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    this.renderer.setSize(width, height);
-    this.mount.appendChild(this.renderer.domElement);
-    this.initializeOrbits();
-    this.initializeCamera();
-    
-    const texture = new THREE.TextureLoader().load('./BlenderFinal.gltf');
-    const material = new THREE.MeshBasicMaterial({ map: 2 });
-    const cube = new THREE.Mesh( texture, material ); 
-    this.scene.add( cube );
+
+    //ADD CUBE
+    const geometry = new THREE.BoxGeometry(1, 1, 1)
+    const material = new THREE.MeshBasicMaterial({ color: '#433F81'     })
+    this.cube = new THREE.Mesh(geometry, material)
+    this.scene.add(this.cube)
+
+    //ADD OBJECT
+
+    const loader = new GLTFLoader();
+      loader.load(Model, (object) => {
+        this.scene.add(object.scene);
+      });
 
     this.animate();
   }
-componentWillUnmount() {
-    cancelAnimationFrame(this.frameId);
-    this.mount.removeChild(this.renderer.domElement);
+
+componentWillUnmount(){
+    this.stop()
+    this.mount.removeChild(this.renderer.domElement)
   }
-initializeOrbits() {
-    this.controls.rotateSpeed = 1.0;
-    this.controls.zoomSpeed = 1.2;
-    this.controls.panSpeed = 0.8;
-  }
-initializeCamera() {
-    this.camera.position.x = 0;
-    this.camera.position.y = 0;
-    this.camera.position.z = 4;
-  }
-animate() {
-    this.frameId = window.requestAnimationFrame(this.animate);
-    this.renderer.render(this.scene, this.camera);
-  }
-addCube(cube) {
-    this.scene.add(cube);
-  }
-render() {
-    return (
-      <div>
-        <div
-          id="boardCanvas"
-          style={{ width: "80vw", height: "40vw" }}
-          ref={mount => {
-            this.mount = mount;
-          }}
-        />
-      </div>
-    );
+
+animate = () => {
+   this.renderScene()
+   this.frameId = window.requestAnimationFrame(this.animate)
+ }
+
+renderScene = () => {
+  this.renderer.render(this.scene, this.camera)
+}
+
+render(){
+    return(
+      <div
+        style={{ width: '400px', height: '400px' }}
+        ref={(mount) => { this.mount = mount }}
+      />
+    )
   }
 }
+
 export default Viewer;
