@@ -13,7 +13,7 @@ import ModelViewer from './components/ModelViewer';
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
-    if (isSafari) return (
+    if (isMobileSafari | isSafari) return (
             <div className="App">
               <div className="Container">
                     <Header/>
