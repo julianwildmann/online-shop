@@ -6,19 +6,21 @@ import Gallery from "./components/Gallery";
 import Buttons from "./components/Buttons";
 import Viewer from "./components/Viewer";
 import Description from "./components/Description";
+import ThreeDimensions from "./components/ThreeDimensions";
+import ModelViewer from './components/ModelViewer';
 
 
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
-    if (isChrome) return (
+    if (isSafari) return (
             <div className="App">
               <div className="Container">
-                    <Header />
-                    <Gallery />
-                    <Buttons />
-                    <Viewer />
-                    <Description />
+                    <Header/>
+                    <Gallery/>
+                    <Buttons/>
+                    <ModelViewer/>
+                    <Description/>
               </div>
             </div>
     )

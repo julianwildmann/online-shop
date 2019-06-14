@@ -3,7 +3,7 @@ import React from 'react';
 class Buttons extends React.Component { 
     render() {
         return (
-            <div ClassName="Btns">    
+            <div className="Btns">    
             <a rel="ar" href="./media/DSWMaterialFinal.usdz" align-content="center">
               <img src="./media/ar-starten.png" alt="AR Label" width="40%" id="arBtn" />
             </a>

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
 import GLTFLoader from 'three-gltf-loader';
-import Model from "./model.gltf"; 
+
 
 const OrbitControls = require("three-orbit-controls") (THREE);
 
-class Viewer extends Component{
-
+class Viewer extends Component {
+  constructor(props) {
+    super(props);
+    this.animate = this.animate.bind(this);
+    this.addObject = this.addObject.bind(this);
+  }
 
   componentDidMount(){
     const width = this.mount.clientWidth
@@ -22,11 +26,12 @@ class Viewer extends Component{
       0.1,
       1000
     )
-    this.camera.position.z = 4
+    this.camera.position.z = 5
+  
 
     //ADD RENDERER
     this.renderer = new THREE.WebGLRenderer({ antialias: true })
-    this.renderer.setClearColor('#888888')
+    this.renderer.setClearColor('#AAAAAA')
     this.renderer.setSize(width, height)
     this.mount.appendChild(this.renderer.domElement)
 
@@ -40,30 +45,34 @@ class Viewer extends Component{
     this.scene.add(this.cube)
 
     //ADD OBJECT
-
     const loader = new GLTFLoader();
-      loader.load(Model, (object) => {
+      loader.load('/3D-files/model.gltf', (object) => {
         this.scene.add(object.scene);
       });
 
     this.animate();
+
   }
 
-componentWillUnmount(){
+  componentWillUnmount(){
     this.stop()
     this.mount.removeChild(this.renderer.domElement)
   }
 
-animate = () => {
+  animate = () => {
    this.renderScene()
    this.frameId = window.requestAnimationFrame(this.animate)
  }
 
-renderScene = () => {
-  this.renderer.render(this.scene, this.camera)
-}
+ addObject (object) {
+   this.scene.add(object);
+ }
+  renderScene = () => {
+    this.renderer.render(this.scene, this.camera)
+  }
 
-render(){
+
+  render(){
     return(
       <div
         style={{ width: '400px', height: '400px' }}
