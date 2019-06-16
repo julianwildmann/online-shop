@@ -6,7 +6,7 @@ class ModelViewer extends React.Component {
     render() {
         return (
             <div id="ModelViewer">
-                 <model-viewer src="media/3D-files/BlenderFinal.gltf" ar ios-src="media/3D-Files/DSWMaterialFinal.usdz" controls poster="DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF"  position="center" background-color="#455A64"></model-viewer>
+                 <model-viewer ar src="media/3D-files/BlenderFinal.gltf" ios-src="media/3D-files/DSWMaterialFinal.usdz" camera-controls poster="DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF" auto-rotate align-model="center"></model-viewer>
           </div>
         )
     }
