@@ -41,11 +41,6 @@
   padding-right: 0px;
 }
 
-#responsive-ar-image {
-  width: 50%;  height: auto;
-  align-content: center
-}
-
 #description-text {
   text-align: justify;
 }
@@ -70,13 +65,10 @@ table, th, td {
   padding-top: 0px;
 }
 
-.ModelViewer {
-  display: block;
-  width: 100px;
-  height: 200px;
+#Canvas {
+  width: 100%;
+  height: auto;
 }
-
-
 
 @keyframes App-logo-spin {
   from {
