@@ -20,6 +20,7 @@ class App extends Component {
                 <Route path="/au8r3nxxb3" component={ Group3 } />
                 <Route path="/Links" component={ Links } />
               </Switch>
+              <p>Unter folgendem Link können Sie an der Umfrage zu meiner Masterarbeit teilnehmen: Insert Link</p>
 
 
             </div>
