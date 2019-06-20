@@ -7,7 +7,7 @@ import Description from "./Description";
 class Group1 extends React.Component { 
     render() {
         return (
-            <div className="Hello">
+            <div className="Group1">
             <Header />
             <Gallery />
             <Description />
