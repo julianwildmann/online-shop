@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 import {  BrowserView,  MobileView,  isBrowser,  isMobile, isIOS, isMobileSafari, isSafari, isChrome} from "react-device-detect";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
-import Header from "./components/Header";
-import Gallery from "./components/Gallery";
-import Buttons from "./components/Buttons";
-import Viewer from "./components/Viewer";
-import Description from "./components/Description";
-import ThreeDimensions from "./components/ThreeDimensions";
-import ModelViewer from './components/ModelViewer';
+import Group1 from "./components/Group1";
+import Group2 from "./components/Group2";
+import Group3 from "./components/Group3";
+import Links from "./components/Links";
 
 
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
     if (isMobileSafari | isSafari) return (
+      <BrowserRouter>
             <div className="App">
-              <div className="Container">
-                    <Header/>
-                    <Gallery/>
-                    <Buttons/>
-                    <ModelViewer/>
-                    <Description/>
-              </div>
+              <Switch>
+                <Route path="/z0rxa7k9p1" component={ Group1 } />
+                <Route path="/gnwsusz0v2" component={ Group2 } />
+                <Route path="/au8r3nxxb3" component={ Group3 } />
+                <Route path="/Links" component={ Links } />
+              </Switch>
+
+
             </div>
+      </BrowserRouter>
     )
             // Hinweis falls nicht kompatibles Gerät verwendet wird
             return (
