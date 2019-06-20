@@ -1,24 +1,25 @@
 import React from 'react';
-import "@google/model-viewer"
+import "@google/model-viewer";
+import "./ModelViewer.css";
 
 
 class ModelViewer extends React.Component { 
     render() {
         return (
-            <div className="ModelViewer">
+            <div>
                 <div>
-                    <model-viewer 
-                        className="ModelViewer" ar src="media/3D-files/DSW.gltf" ios-src="media/3D-files/DSWMaterialFinal.usdz" camera-controls poster="media/3D-files/DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF" 
-                        style={{ width: "100%", height: "300px", marginLeft: "auto", marginRight: "auto"}}>
+                    <model-viewer id="ModelViewer"
+                        src="media/3D-files/DSW.gltf" ios-src="media/3D-files/DSWMaterialFinal.usdz" camera-controls poster="media/3D-files/DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF">
                     </model-viewer>
+                </div>
+                <p id="instruction">Wische über den Stuhl um ihn von allen Seiten zu betrachten</p>
 
-                </div>
                 <div>
-                    <model-viewer 
-                        className="ModelViewerNoAR" src="media/3D-files/DSW.gltf" camera-controls poster="media/3D-files/DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF" 
-                        style={{ width: "100%", height: "width"/2, marginLeft: "auto", marginRight: "auto"}}>
+                    <model-viewer id="ModelViewer"
+                        ar src="media/3D-files/DSW.gltf" ios-src="media/3D-files/DSWMaterialFinal.usdz" camera-controls poster="media/3D-files/DSW_Poster.png" alt="DSW Chair" background-color="#FFFFFF">
                     </model-viewer>
                 </div>
+                <p id="instruction">Tippe auf den Stuhl um ihn in deine Umgebung zu platzieren</p>
             </div>    
         )
     }
