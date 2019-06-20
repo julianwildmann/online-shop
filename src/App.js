@@ -12,13 +12,13 @@ class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
     if (isMobileSafari | isSafari) return (
-      <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
               <Switch>
                 <Route path="/z0rxa7k9p1" component={ Group1 } />
                 <Route path="/gnwsusz0v2" component={ Group2 } />
                 <Route path="/au8r3nxxb3" component={ Group3 } />
-                <Route path="/Links" component={ Links } />
+                <Route path="/links" component={ Links } />
               </Switch>
               <p>Unter folgendem Link können Sie an der Umfrage zu meiner Masterarbeit teilnehmen: Insert Link</p>
 
