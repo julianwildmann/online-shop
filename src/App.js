@@ -15,10 +15,10 @@ class App extends Component {
       <BrowserRouter basename="/online-shop">
             <div className="App">
               <Switch>
-                <Route path="/z0rxa7k9p1" component={ Group1 } />
-                <Route path="/gnwsusz0v2" component={ Group2 } />
-                <Route path="/au8r3nxxb3" component={ Group3 } />
-                <Route path="/links" component={ Links } />
+                <Route path={process.env.PUBLIC_URL + "/z0rxa7k9p1"} component={ Group1 } />
+                <Route path={process.env.PUBLIC_URL + "/gnwsusz0v2"} component={ Group2 } />
+                <Route path={process.env.PUBLIC_URL + "/au8r3nxxb3"} component={ Group3 } />
+                <Route path={process.env.PUBLIC_URL + "/links"} component={ Links } />
               </Switch>
               <p>Unter folgendem Link können Sie an der Umfrage zu meiner Masterarbeit teilnehmen: Insert Link</p>
 
