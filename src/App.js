@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
     if (isMobileSafari | isSafari) return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename="julianwildmann.github.io/online-shop">
             <div className="App">
               <Switch>
                 <Route path="/" exact component={Home} />
