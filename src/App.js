@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { isMobileSafari, isSafari } from "react-device-detect";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import Group1 from "./components/Group1";
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
     if (isMobileSafari | isSafari) return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename="/">
             <div className="App">
               <Switch>
                 <Route path="/" exact component={Home} />
@@ -23,7 +23,7 @@ class App extends Component {
                 <Route path="/links" component={ Links } />
               </Switch>
             </div>
-      </BrowserRouter>
+      </HashRouter>
     )
             // Hinweis falls nicht kompatibles Gerät verwendet wird
             return (

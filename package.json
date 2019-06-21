@@ -7,7 +7,7 @@
     "@google/model-viewer": "^0.4.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
-    "react-alice-carousel": "^1.13.11",
+    "react-alice-carousel": "^1.14.0",
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.8.6",
     "react-responsive-carousel": "^3.1.49",
