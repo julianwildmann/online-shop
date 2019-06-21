@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "./Header"
 import Gallery from "./Gallery";
-import ModelViewer from "./ModelViewerAR";
 import Description from "./Description";
 import ModelViewerAR from './ModelViewerAR';
 

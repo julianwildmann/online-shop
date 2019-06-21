@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  BrowserView,  MobileView,  isBrowser,  isMobile, isIOS, isMobileSafari, isSafari, isChrome} from "react-device-detect";
+import { isMobileSafari, isSafari } from "react-device-detect";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Group1 from "./components/Group1";
@@ -12,16 +12,15 @@ class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
     if (isMobileSafari | isSafari) return (
-      <BrowserRouter basename="/online-shop">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className="App">
               <Switch>
-                <Route path={process.env.PUBLIC_URL + "/z0rxa7k9p1"} component={ Group1 } />
-                <Route path={process.env.PUBLIC_URL + "/gnwsusz0v2"} component={ Group2 } />
-                <Route path={process.env.PUBLIC_URL + "/au8r3nxxb3"} component={ Group3 } />
-                <Route path={process.env.PUBLIC_URL + "/links"} component={ Links } />
+                <Route path="/z0rxa7k9p1" component={ Group1 } />
+                <Route path="/gnwsusz0v2" component={ Group2 } />
+                <Route path="/au8r3nxxb3" component={ Group3 } />
+                <Route path="/links" component={ Links } />
               </Switch>
               <p>Unter folgendem Link können Sie an der Umfrage zu meiner Masterarbeit teilnehmen: Insert Link</p>
-
             </div>
       </BrowserRouter>
     )
