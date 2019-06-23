@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { isMobileSafari, isSafari } from "react-device-detect";
+import { isMobileSafari, isSafari, osVersion } from "react-device-detect";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
@@ -12,7 +12,7 @@ import Links from "./components/Links";
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
-    if (isMobileSafari | isSafari) return (
+    if (isMobileSafari | isSafari && osVersion === "12") return (
       <HashRouter basename="/">
             <div className="App">
               <Switch>
@@ -20,8 +20,9 @@ class App extends Component {
                 <Route path="/z0rxa7k9p1" component={Group1} />
                 <Route path="/gnwsusz0v2" component={Group2} />
                 <Route path="/au8r3nxxb3" component={Group3} />
-                <Route path="/links" component={ Links } />
+                <Route path="/links" component={Links} />
               </Switch>
+              { osVersion }
             </div>
       </HashRouter>
     )
