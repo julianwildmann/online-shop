@@ -11,8 +11,8 @@ import Links from "./components/Links";
 
 class App extends Component {
   render() {
-    // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && osVersion === "12"
-    if (isMobileSafari | isSafari && (osVersion === "12.3.1" | osVersion === "12.0")) return (
+    // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && (osVersion === "12.3.1" | osVersion === "12.0")
+    if (isMobileSafari | isSafari) return (
 
       <BrowserRouter basename="/">
             <div className="App">
@@ -23,7 +23,6 @@ class App extends Component {
                 <Route path="/au8r3nxxb3" component={Group3} />
                 <Route path="/links" component={Links} />
               </Switch>
-              { osVersion }
             </div>
       </BrowserRouter>
     )
