@@ -14,7 +14,7 @@ class App extends Component {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && (osVersion === "12.3.1" | osVersion === "12.0")
     if (isMobileSafari | isSafari) return (
 
-      <BrowserRouter basename="/">
+      <HashRouter basename="/">
             <div className="App">
               <Switch>
                 <Route path="/" exact component={Home} />
@@ -24,12 +24,12 @@ class App extends Component {
                 <Route path="/links" component={Links} />
               </Switch>
             </div>
-      </BrowserRouter>
+      </HashRouter>
     )
             // Hinweis falls nicht kompatibles Gerät verwendet wird
             return (
               <div>
-                <p>Bitte nutze ein iPhone oder iPad (mind. iOS12)) und starte die Umfrage hier erneut: Link.</p>
+                <p>Bitte nutze ein iPhone oder iPad (mind. iOS 12)) und starte die Umfrage hier erneut: Link.</p>
               </div>
             )
     }
