@@ -12,18 +12,7 @@ import Links from "./components/Links";
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && osVersion === "12"
-    if (isMobileSafari | isSafari && (osVersion === "12.0" | 
-      isSafari && osVersion === "12.0.1" | 
-      isSafari && osVersion === "12.1" | 
-      isSafari && osVersion === "12.1.1" | 
-      isSafari && osVersion === "12.1.2" | 
-      isSafari && osVersion === "12.1.3" | 
-      isSafari && osVersion === "12.1.4" | 
-      isSafari && osVersion === "12.2" |
-      isSafari && osVersion === "12.2.3" |
-      isSafari && osVersion === "12.2" |
-      isSafari && osVersion === "12.3.1" |
-      isSafari && osVersion === "12.3.2"  )) return (
+    if (isMobileSafari | isSafari && osVersion === "12.3.1") return (
 
       <HashRouter basename="/">
             <div className="App">
