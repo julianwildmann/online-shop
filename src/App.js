@@ -11,8 +11,8 @@ import Links from "./components/Links";
 
 class App extends Component {
   render() {
-    // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari)
-    if (isMobileSafari | isSafari && osVersion === "12") return (
+    // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && osVersion === "12"
+    if (isMobileSafari | isSafari) return (
       <HashRouter basename="/">
             <div className="App">
               <Switch>
@@ -29,7 +29,7 @@ class App extends Component {
             // Hinweis falls nicht kompatibles Gerät verwendet wird
             return (
               <div>
-                <p>Bitte nutze ein iOS (Apple) Geräte und starte die Umfrage erneut.</p>
+                <p>Bitte nutze ein iPhone oder iPad (mind. iOS12)) und starte die Umfrage hier erneut: Link.</p>
               </div>
             )
     }
