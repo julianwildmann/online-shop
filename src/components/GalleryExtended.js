@@ -8,8 +8,8 @@ class GalleryExtended extends React.Component {
       require("./img/product-image-11.jpg"),
       require("./img/product-image-21.jpg"),
       require("./img/product-image-31.jpg"),
-      require("./img/product-image-61.jpg"),
       require("./img/product-image-71.jpg"),
+      require("./img/product-image-81.jpg"),
 ];
 
   // Starte Index bei 0, Zeige ein bzw drei Hero Bilder je nach Bildschirmgröße

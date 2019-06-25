@@ -4,7 +4,7 @@ import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import Group1 from "./components/Group1";
-import Group11 from "./components/Group11";
+import Group11git  from "./components/Group11";
 import Group2 from "./components/Group2";
 import Group21 from "./components/Group21";
 import Group3 from "./components/Group3";
