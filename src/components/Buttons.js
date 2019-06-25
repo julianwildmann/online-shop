@@ -3,17 +3,24 @@ import React from 'react';
 class Buttons extends React.Component { 
     render() {
         return (
-            <div className="Btns">    
-            <a rel="ar" href="./media/DSWMaterialFinal.usdz" align-content="center">
-              <img src="./media/ar-starten.png" alt="AR Label" width="40%" id="arBtn" />
-            </a>
+          <div className="btns">
+            <div className="3dBtn">
+              <Link to="2dpighli3d">
+                <img src="/media/3D-starten-icon.png" />
+              </Link>
+            </div>
 
-            <a href="./media/product-video.mp4" controls>
-              <img src="./media/video-ansehen.png" alt="Video Label" width="40%" id="videoBtn" />
-            </a>
+            <div className="arBtn">
+              <Link to="2dpighli3d">
+                <img src="/media/AR-starten.png" />
+              </Link>
+            </div>
           </div>
         )
     }
 }
 
 export default Buttons;
+
+
+ef0kij1par
