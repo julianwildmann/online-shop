@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class Buttons extends React.Component { 
     render() {
@@ -21,6 +22,3 @@ class Buttons extends React.Component {
 }
 
 export default Buttons;
-
-
-ef0kij1par
