@@ -16,7 +16,7 @@ import ModelViewerAR from './components/ModelViewerAR';
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && (osVersion === "12.3.1" | osVersion === "12.0")
-    if (isMobileSafari | isSafari && (osVersion "12.0.1" || osVersion "12.1" || osVersion "12.1.1" || osVersion "12.1.2" || osVersion "12.1.3" || osVersion "12.1.4" || osVersion "12.2" || osVersion "12.3" || osVersion "12.3.1" || osVersion "12.3.2" || osVersion "12.4")) return (
+    if (isMobileSafari | isSafari && (osVersion=("12.0.1" || "12.1" || "12.1.1" || "12.1.2" || "12.1.3" || "12.1.4" || "12.2" || "12.3" || "12.3.1" || "12.3.2" || "12.4"))) return (
 
       <HashRouter basename="/">
             <div className="App">
