@@ -4,6 +4,7 @@ import Gallery from "./Gallery";
 import ModelViewer from "./ModelViewer";
 import Description from "./Description";
 
+// Embedded 3D viewer static information
 
 class Group2 extends React.Component { 
     render() {

@@ -4,6 +4,7 @@ import Gallery from "./Gallery";
 import Description from "./Description";
 import ViewerButton from './ViewerButton';
 
+// 3D viewer button + static information
 
 class Group2 extends React.Component { 
     render() {

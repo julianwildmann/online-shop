@@ -1,5 +1,7 @@
 import React from 'react'
  
+// Header information (name + product category)
+
 function Header () {
     return (
         <header id="header">
