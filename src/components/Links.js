@@ -10,6 +10,9 @@ class Links extends React.Component {
                 <Link to="/z0rxa7k9p1">
                     <li>AFT</li>
                 </Link>
+                <Link to="/toswg95b31">
+                    <li>AFT extended</li>
+                </Link>
                 <Link to="/gnwsusz0v2">
                     <li>3D embedded</li>
                 </Link>

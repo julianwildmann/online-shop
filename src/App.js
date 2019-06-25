@@ -4,6 +4,7 @@ import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
 import Group1 from "./components/Group1";
+import Group1 from "./components/Group1";
 import Group2 from "./components/Group2";
 import Group21 from "./components/Group21";
 import Group3 from "./components/Group3";
@@ -23,6 +24,7 @@ class App extends Component {
               <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/z0rxa7k9p1" component={Group1} />
+                <Route path="/toswg95b31" component={Group11} />
                 <Route path="/gnwsusz0v2" component={Group2} />
                 <Route path="/01w5b1lxb2" component={Group21} />
                 <Route path="/au8r3nxxb3" component={Group3} />
