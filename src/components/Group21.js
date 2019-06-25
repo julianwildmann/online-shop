@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./Header"
 import Gallery from "./Gallery";
 import Description from "./Description";
-import Buttons from './Buttons';
+import ViewerButton from './ViewerButton';
 
 
 class Group2 extends React.Component { 
@@ -11,7 +11,7 @@ class Group2 extends React.Component {
             <div className="Group2">
             <Header />
             <Gallery />
-            <Buttons />
+            <ViewerButton />
             <Description />
             </div>
         )
