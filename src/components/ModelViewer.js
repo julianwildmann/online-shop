@@ -1,6 +1,6 @@
 import React from 'react';
 import "@google/model-viewer";
-import "./ModelViewer.css";
+import "./Components.css";
 
 
 class ModelViewer extends React.Component { 

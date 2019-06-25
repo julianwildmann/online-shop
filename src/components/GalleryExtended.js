@@ -38,7 +38,7 @@ class GalleryExtended extends React.Component {
     const { galleryItems, responsive, currentIndex } = this.state
     return (
       // Definiere die Features der Gallery und erstelle eine Liste mit Thumbnail-Bildern
-      <div style={galleryStyle}>
+      <div id="gallery">
         <AliceCarousel
           dotsDisabled={false}
           buttonsDisabled={true}
@@ -55,7 +55,7 @@ class GalleryExtended extends React.Component {
         /> 
 
         <div>
-          <ul style={thumbnailStyle}>{this.items.map(this.thumbItem)}</ul>
+          <ul sid="thumnails">{this.items.map(this.thumbItem)}</ul>
       </div>
 
       </div>
@@ -64,17 +64,6 @@ class GalleryExtended extends React.Component {
   }
 }
 
-// Styleelement für Gallery und Thumbnails
-const galleryStyle ={
-  marginTop: "0px",
-  marginBottom: "15px",
-}
-
-const thumbnailStyle ={
-  marginTop: "10px",
-  marginBottom: "10px",
-
-}
 
 export default GalleryExtended;
 
