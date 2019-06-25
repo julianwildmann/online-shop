@@ -73,6 +73,7 @@ const galleryStyle ={
 const thumbnailStyle ={
   marginTop: "10px",
   marginBottom: "10px",
+
 }
 
 export default GalleryExtended;

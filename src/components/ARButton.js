@@ -5,7 +5,7 @@ class ARButton extends React.Component {
         return (
           <div className="ARButton">
             <a href="media/3D-files/BlenderFinal1.usdz" rel="ar">
-              <img src="media/ar-starten.png" alt="AR-Button" width="40%" height="auto" />            
+              <img src="media/ar-button.jpg" alt="AR-Button" width="35%" height="auto" />            
             </a>
           </div>
         )
