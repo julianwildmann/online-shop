@@ -6,7 +6,7 @@ class ViewerButton extends React.Component {
         return (
           <div className="3DButton">
             <Link to="2dpighli3d">
-              <img src="media/3D-starten-icon.png" alt="3D-Button" width="40%" height="auto" />
+              <img src="media/3D-starten-icon.png" alt="3D-Button" width="40%" height="auto"/>
             </Link>
           </div>
         )

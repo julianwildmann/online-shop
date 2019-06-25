@@ -16,8 +16,8 @@ import ModelViewerAR from './components/ModelViewerAR';
 class App extends Component {
   render() {
     // Prüfe, ob iOS device und mobile safari verwendet wird (isIOS && isMobileSafari) && (osVersion === "12.3.1" | osVersion === "12.0")     (isMobileSafari | isSafari && (osVersion=("12.0.1" || "12.1" || "12.1.1" || "12.1.2" || "12.1.3" || "12.1.4" || "12.2" || "12.3" || "12.3.1" || "12.3.2" || "12.4"))) return (
-
-    if(/iPhone|iPad|iPod|safari\sOS\s12/.test(navigator.userAgent)) return (
+    // /iPhone|iPad|iPod|safari\sOS\s12/.test(navigator.userAgent)
+    if(isSafari | isMobileSafari) return (
       <HashRouter basename="/">
             <div className="App">
               <Switch>
@@ -37,7 +37,7 @@ class App extends Component {
             // Hinweis falls nicht kompatibles Gerät verwendet wird
             return (
               <div>
-                <p>Bitte nutze ein iPhone oder iPad (mind. iOS 12)) und starte die Umfrage hier erneut: Link.</p>
+                <p>Bitte öffne die Umfrage auf einem iPhone, iPad oder iPod (iOS12 oder höher) im Safari Browser und starte die Umfrage erneut.</p>
               </div>
             )
     }
