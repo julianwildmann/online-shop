@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8112332345b6a96757d44d565d4a8eb2",
+    "revision": "04cb0bb5e4d9c88ee2d54ae803d960c1",
     "url": "/online-shop/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/online-shop/static/css/2.a881067f.chunk.css"
   },
   {
-    "revision": "07ba59b9d07903b59337",
+    "revision": "efc7a705e992d3155948",
     "url": "/online-shop/static/css/main.728bce2b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/online-shop/static/js/2.7220fe57.chunk.js"
   },
   {
-    "revision": "07ba59b9d07903b59337",
-    "url": "/online-shop/static/js/main.09057710.chunk.js"
+    "revision": "efc7a705e992d3155948",
+    "url": "/online-shop/static/js/main.d477e229.chunk.js"
   },
   {
     "revision": "de22ddf6103542cfd170",
@@ -44,11 +44,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/online-shop/static/media/product-image-51.176906a4.jpg"
   },
   {
-    "revision": "6392104122e42037a6b4452f0521a7fb",
-    "url": "/online-shop/static/media/product-image-61.63921041.jpg"
+    "revision": "72e388f534843355a84fb2556b1ccf89",
+    "url": "/online-shop/static/media/product-image-71.72e388f5.jpg"
   },
   {
-    "revision": "574b1ffc04e00a16d821a0c202f900d3",
-    "url": "/online-shop/static/media/product-image-71.574b1ffc.jpg"
+    "revision": "aeb0f4c789d1b82679e76f9611b4d7f2",
+    "url": "/online-shop/static/media/product-image-81.aeb0f4c7.jpg"
   }
 ]);

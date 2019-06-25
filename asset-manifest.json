@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/online-shop/static/css/main.728bce2b.chunk.css",
-    "main.js": "/online-shop/static/js/main.09057710.chunk.js",
-    "main.js.map": "/online-shop/static/js/main.09057710.chunk.js.map",
+    "main.js": "/online-shop/static/js/main.d477e229.chunk.js",
+    "main.js.map": "/online-shop/static/js/main.d477e229.chunk.js.map",
     "runtime~main.js": "/online-shop/static/js/runtime~main.b83c20ff.js",
     "runtime~main.js.map": "/online-shop/static/js/runtime~main.b83c20ff.js.map",
     "static/css/2.a881067f.chunk.css": "/online-shop/static/css/2.a881067f.chunk.css",
     "static/js/2.7220fe57.chunk.js": "/online-shop/static/js/2.7220fe57.chunk.js",
     "static/js/2.7220fe57.chunk.js.map": "/online-shop/static/js/2.7220fe57.chunk.js.map",
     "index.html": "/online-shop/index.html",
-    "precache-manifest.623a0612062a63e6cd5aee9cc8d5719d.js": "/online-shop/precache-manifest.623a0612062a63e6cd5aee9cc8d5719d.js",
+    "precache-manifest.6c88da785d8d92e8b687132411684b7f.js": "/online-shop/precache-manifest.6c88da785d8d92e8b687132411684b7f.js",
     "service-worker.js": "/online-shop/service-worker.js",
     "static/css/2.a881067f.chunk.css.map": "/online-shop/static/css/2.a881067f.chunk.css.map",
     "static/css/main.728bce2b.chunk.css.map": "/online-shop/static/css/main.728bce2b.chunk.css.map",
@@ -18,7 +18,7 @@
     "static/media/product-image-31.jpg": "/online-shop/static/media/product-image-31.a1e40e13.jpg",
     "static/media/product-image-41.jpg": "/online-shop/static/media/product-image-41.c8a832bc.jpg",
     "static/media/product-image-51.jpg": "/online-shop/static/media/product-image-51.176906a4.jpg",
-    "static/media/product-image-61.jpg": "/online-shop/static/media/product-image-61.63921041.jpg",
-    "static/media/product-image-71.jpg": "/online-shop/static/media/product-image-71.574b1ffc.jpg"
+    "static/media/product-image-71.jpg": "/online-shop/static/media/product-image-71.72e388f5.jpg",
+    "static/media/product-image-81.jpg": "/online-shop/static/media/product-image-81.aeb0f4c7.jpg"
   }
 }
