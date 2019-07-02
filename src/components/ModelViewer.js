@@ -2,7 +2,6 @@ import React from 'react';
 import "@google/model-viewer";
 import "./Components.css";
 
-// Component that integrates 3D Model Viewer
 
 class ModelViewer extends React.Component { 
     render() {

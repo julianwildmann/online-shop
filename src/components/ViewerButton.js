@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-// Button that triggers 3D Model Viewer on seperate page
-
 class ViewerButton extends React.Component { 
     render() {
         return (

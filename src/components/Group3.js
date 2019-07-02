@@ -4,8 +4,6 @@ import Gallery from "./Gallery";
 import Description from "./Description";
 import ModelViewerAR from './ModelViewerAR';
 
-// Embedded AR viewer + static information
-
 class Group3 extends React.Component { 
     render() {
         return (

@@ -1,7 +1,5 @@
 import React from 'react';
 
-// homepage with link to survey
-
 class Home extends React.Component { 
     render() {
         return (

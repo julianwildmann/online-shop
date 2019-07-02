@@ -3,7 +3,6 @@ import Header from "./Header"
 import GalleryExtended from "./GalleryExtended";
 import Description from "./Description";
 
-// Alternative Photo Technology including context senstive photos + static information
 
 class Group11 extends React.Component { 
     render() {

@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/online-shop/precache-manifest.09d83a88430a476adc2ede739a310292.js"
+=======
+  "/online-shop/precache-manifest.98892a58d71650e571a7e558e1b1b084.js"
+>>>>>>> parent of 9780551d... cleanup
 );
 
 self.addEventListener('message', (event) => {

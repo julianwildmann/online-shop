@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Button that triggers AR quick look module
-
 class ARButton extends React.Component { 
     render() {
         return (
